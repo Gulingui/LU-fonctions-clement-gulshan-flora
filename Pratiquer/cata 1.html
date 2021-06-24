@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   function getVillainName(birthday){
+  const m = ["Evil","Vile","Cruel","Trashy","Despicable","Embarrassing","Disreputable","Atrocious","Twirling","Orange","Terrifying","Awkward"];
+  const d = ["Mustache","Pickle","Hood Ornament","Raisin","Recycling Bin","Potato","Tomato","House Cat","Teaspoon","Laundry Basket"];
+
+  let firstName;
+  let lastName;
+  let villainName;
+
+switch (birthday.getMonth()) {
+  case 1 : firstName = m[0];
+  break;
+  case 2 : firstName = m[1];
+  break;
+  case 3 : firstName = m[2];
+  break;
+  case 4 : firstName = m[3];
+  break;
+  case 5 : firstName = m[4];
+  break;
+  case 6 : firstName = m[5];
+  break;
+  case 7 : firstName = m[6];
+  break;
+  case 8 : firstName = m[7];
+  break;
+  case 9 : firstName = m[8];
+  break;
+  case 10 : firstName = m[9];
+  break;
+  case 11 : firstName = m[10];
+  break;
+  case 12 : firstName = m[11];
+}
+switch (birthday.getDate().slice(1)) {
+    case 0 : lastName = d[0];
+    break;
+    case 1 : lastName = d[1];
+    break;
+    case 2 : lastName = d[2];
+    break;
+    case 3 : lastName = d[3];
+    break;
+    case 4 : lastName = d[4];
+    break;
+    case 5 : lastName = d[5];
+    break;
+    case 6 : lastName = d[6];
+    break;
+    case 7 : lastName = d[7];
+    break;
+    case 8 : lastName = d[8];
+    break;
+    case 9 : lastName = d[9];
+}
+villainName = firstName + lastName;
+}
+
+   getVillainName(4);
+
+    </script>
+</body>
+</html>
